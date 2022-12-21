@@ -2,8 +2,8 @@ const router = require('express').Router()
 const Vehicle = require('../models/vehicle')
 
 router.get('/', async (req, res) => {
-    const vehicles = await Vehicle.find()
-    res.json(vehicles)
+    const vehicle = await Vehicle.find()
+    res.json(vehicle)
 })
 
 router.post('/', async (req, res) => {
